@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article{
+    margin: 40px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0;
+    height: 10px;
+}
+
+.firstExerciseSubtitle{
+    background-color:rgba(66, 64, 64, 0.649);
+    font-weight: bold;
+    font-family:'orbitron', sans-serif;
+    padding: 10px;
+    white-space: nowrap;
+    width: 600px;
+
+}
+
+#subtitleHtml, #subtitleCss{ 
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.conjuntoHtml {
+    width: 540px;
+    height: 300px;
+    padding: 20px 20px;
+    font-size: 15px;
+    margin: auto;
+}
+
+.conjuntoHtml img, .conjuntoCss img {
+    float: left;
+}
+
+.conjuntoCss {
+    width: 540px;
+    padding: 20px 20px;
+    font-size: 15px;
+    margin: auto;
+}
+
+
+/* Second Exercise */
+.secondExerciseSubtitle{
+    text-align: center;
+    padding: 20px;
+    height: 10px;
+}
+
+.columnSecondExercise{
+    column-count: 4;
+    padding: 10px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    column-gap: 15px;
+}
+
+.conjuntoSecondExcersice{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li1, .li2, .li3, .li4, .li5, .li6, .li7, .li8, .li9, .li10, .li11, .li12, .li13, .li14, .li15, .li16, .li17, .li18, .li19, .li20{
+    padding: 5px;
+    text-align: left;
+}
+
+.li1 {color: #8C92AC;}
+.li2 {color: #00FFFF;}
+.li3 {color: #87CEEB;}
+.li4 {color: #FF00FF;}
+.li5 {color: #800080;}
+.li6 {color: #A89C94;}
+.li7 {color: #FF0000;}
+.li8 {color: #FFA500;}
+.li9 {color: #FFC0CB;}
+.li10{color: #8F00FF;}
+.li11{color: #FFBF00;}
+.li12{color: #FFFF00;}
+.li13{color: #00FF00;}
+.li14{color: #F33A6A;}
+.li15{color: #4B0082;}
+.li16{color: #008000;}
+.li17{color: #50C878;}
+.li18{color: #008080;}
+.li19{color: #98AFC7;}
+.li20{color: #0000FF;}
+
+
+/* Third Exercise */
+.thirdExerciseSubtitle{
+    text-align: center;
+    padding: 20px;
+    height: 10px;
+}
+
+.conjuntoThirdExcersice{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.columnThirdExercise{
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14, .item15, .item16, .item17, .item18, .item19, .item20, .item21, .item22{
+    background-color: #f1f1f1;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.item1 {
+    background-color: #0F172B;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.item16{
+    background-color: #F4405F;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.item21 {
+    background-color: #0284C8;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item22 {
+    background-color: #145E75;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.item2 {background-color: #364152;}
+.item3 {background-color: #77716C;}
+.item4 {background-color: #B45309;}
+.item5 {background-color: #13522D;}
+.item6 {background-color: #28272A;}
+.item7 {background-color: #DC2626;}
+.item8 {background-color: #F69E0A;}
+.item9 {background-color: #065F45;}
+.item10 {background-color: #404040;}
+.item11 {background-color: #EA590C;}
+.item12 {background-color: #4D7C0F;}
+.item13 {background-color: #124E49;}
+.item14 {background-color: #A31CB0;}
+.item15 {background-color: #BE185E;}
+.item17 {background-color: #6C21AA;}
+.item18 {background-color: #302E81;}
+.item19 {background-color: #1D3A89;}
+.item20 {background-color: #1D3A89;}
+
+
+/* Third Exercise */
+.parent{
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 10px;
+    padding: 10px;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item{
+    background: indigo;
+    border-radius: 8px;
+}
+
+/*first column */
+.item:nth-child(6n+1) { background-color: hsl(250, 80%, 80%); }
+.item:nth-child(6n+7) { background-color: hsl(250, 80%, 70%); }
+.item:nth-child(6n+13) { background-color: hsl(250, 80%, 60%); }
+.item:nth-child(6n+19) { background-color: hsl(250, 80%, 50%); }
+.item:nth-child(6n+25) { background-color: hsl(250, 80%, 40%); }
+.item:nth-child(6n+31) { background-color: hsl(250, 80%, 30%); }
+
+/*Second column */
+.item:nth-child(6n+2) { background-color: hsl(270, 80%, 80%); }
+.item:nth-child(6n+8) { background-color: hsl(270, 80%, 70%); }
+.item:nth-child(6n+14) { background-color: hsl(270, 80%, 60%); }
+.item:nth-child(6n+20) { background-color: hsl(270, 80%, 50%); }
+.item:nth-child(6n+26) { background-color: hsl(270, 80%, 40%); }
+.item:nth-child(6n+32) { background-color: hsl(270, 80%, 30%); }
+
+/*Third column */
+.item:nth-child(6n+3) { background-color: hsl(275, 80%, 80%); }
+.item:nth-child(6n+9) { background-color: hsl(275, 80%, 70%); }
+.item:nth-child(6n+15) { background-color: hsl(275, 80%, 60%); }
+.item:nth-child(6n+21) { background-color: hsl(275, 80%, 50%); }
+.item:nth-child(6n+27) { background-color: hsl(275, 80%, 40%); }
+.item:nth-child(6n+35) { background-color: hsl(275, 80%, 30%); }
+
+/*Fourth column */
+.item:nth-child(6n+4) { background-color: hsl(320, 80%, 80%); }
+.item:nth-child(6n+10) { background-color: hsl(320, 80%, 70%); }
+.item:nth-child(6n+16) { background-color: hsl(320, 80%, 60%); }
+.item:nth-child(6n+22) { background-color: hsl(320, 80%, 50%); }
+.item:nth-child(6n+28) { background-color: hsl(320, 80%, 40%); }
+.item:nth-child(6n+34) { background-color: hsl(320, 80%, 30%); }
+
+/*Fourth column */
+.item:nth-child(6n+5) { background-color: hsl(340, 80%, 80%); }
+.item:nth-child(6n+11) { background-color: hsl(340, 80%, 70%); }
+.item:nth-child(6n+17) { background-color: hsl(340, 80%, 60%); }
+.item:nth-child(6n+23) { background-color: hsl(340, 80%, 50%); }
+.item:nth-child(6n+29) { background-color: hsl(340, 80%, 40%); }
+.item:nth-child(6n+35) { background-color: hsl(340, 80%, 30%); }
+
+/*Sixth column */
+.item:nth-child(6n+6) { background-color: hsl(0, 80%, 80%); }
+.item:nth-child(6n+12) { background-color: hsl(0, 80%, 70%); }
+.item:nth-child(6n+18) { background-color: hsl(0, 80%, 60%); }
+.item:nth-child(6n+24) { background-color: hsl(0, 80%, 50%); }
+.item:nth-child(6n+30) { background-color: hsl(0, 80%, 40%); }
+.item:nth-child(6n+36) { background-color: hsl(0, 80%, 30%); }
