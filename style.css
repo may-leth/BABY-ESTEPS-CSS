@@ -233,7 +233,7 @@ p {
 .item:nth-child(6n+28) { background-color: hsl(320, 80%, 40%); }
 .item:nth-child(6n+34) { background-color: hsl(320, 80%, 30%); }
 
-/*Fourth column */
+/*Fifth column */
 .item:nth-child(6n+5) { background-color: hsl(340, 80%, 80%); }
 .item:nth-child(6n+11) { background-color: hsl(340, 80%, 70%); }
 .item:nth-child(6n+17) { background-color: hsl(340, 80%, 60%); }
